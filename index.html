@@ -126,11 +126,11 @@
 
 					<!-- Speaker notes -->
 					<aside class="notes">
-						Give an example of writing too much code before testing and not knowing exactly where things went wrong. 
+						Give an example of writing too much code before testing and not knowing exactly where things went wrong.
 
-						Give an example of upgrading a "feature" or "bug" only to find out that you broke some key functionality on your website. 
+						Give an example of upgrading a "feature" or "bug" only to find out that you broke some key functionality on your website.
 
-						Give an example of being new to a code base and getting to read the tests to understand how the functions are supposed to fit together. 
+						Give an example of being new to a code base and getting to read the tests to understand how the functions are supposed to fit together.
 
 						Tests can help new developers have more confidence that their changes are not going to break an application.
 					</aside>
@@ -226,15 +226,6 @@ function collectHoney(honeyBucket){ // input honeyBucket
 					<p><a href="http://jasmine.github.io/2.0/introduction.html" target="_blank">Jasmine 2.0 Docs</a></p>
 				</section>
 				<section>
-					<h3>Terminology</h3>
-					<br>
-					<h4>Spec</h4>
-					<p>A <strong>spec</strong> is short for "specification". This is a building block in Jasmine that describes a certain behavior precisely</p>
-					<br>
-					<h4>Suite</h4>
-					<p>A <strong>suite</strong> is a grouping of specs</p>
-				</section>
-				<section>
 					<h3>Setting up the Spec Runner</h3>
 					<p>In this workshop, we'll be running our tests in a browser from a file called <code>SpecRunner.html</code>. That means, we need to make sure our files are loaded before we write tests. Here's how:</p>
 					<pre><code>&lt;!-- include jasmine library --&gt;
@@ -249,6 +240,15 @@ function collectHoney(honeyBucket){ // input honeyBucket
 
 &lt;!-- include spec files here... --&gt;
 &lt;script type="text/javascript" src="spec/GameSpec.js"&gt;&lt;/script&gt;</code></pre>
+				</section>
+				<section>
+					<h3>Terminology</h3>
+					<br>
+					<h4>Spec</h4>
+					<p>A <strong>spec</strong> is short for "specification". This is a building block in Jasmine that describes a certain behavior precisely</p>
+					<br>
+					<h4>Suite</h4>
+					<p>A <strong>suite</strong> is a grouping of specs</p>
 				</section>
 				<section>
 					<h3>Suites, specs, and matchers</h3>
@@ -328,12 +328,12 @@ describe("A suite", function(){
 				<section>
 					<h3>Control Flow Example</h3>
 					<h4>Filtering, Sorting, and Rendering</h4>
-					<img src="./images/book_collection.png">
-				</section>
+					<img id="book-collection" src="./images/book_collection.png">
+				<!-- </section>
 				<section>
 					<h3>Control Flow Example</h3>
 					<h4>In words</h4>
-					<br>
+					<br> -->
 					<pre><code>Describe "a book collection"
   It should sort based on the "sort by" field
   It should sort by author's last name if "sort by" field is empty
